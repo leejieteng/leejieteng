@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Lecture 6.3</title>
+	<title>Find the cube</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="apple-touch-icon" sizes="180x180" href="./css/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./css/favicon/favicon-32x32.png">
@@ -28,6 +28,12 @@
 			const app = new App();
 			window.app = app;
 		});
+        let cube = new THREE.Mesh(
+            new THREE.BoxBufferGeometry(2, 2, 2),
+            new THREE.MeshLambertMaterial({color:'purple'})
+        );
+        cube.position.set(0, 1.5, -10);
+        scene.add(cube);
 	</script>
 </body>
 </html>
