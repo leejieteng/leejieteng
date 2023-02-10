@@ -74,7 +74,7 @@ class App{
         
         const self = this;
         
-        loader.load( './assets/hdr/venice_sunset_1k.hdr', ( texture ) => {
+        loader.load( './assets/hdr/container_free_1k.hdr', ( texture ) => {
           const envMap = pmremGenerator.fromEquirectangular( texture ).texture;
           pmremGenerator.dispose();
 
@@ -116,7 +116,7 @@ class App{
 							child.material.visible = false;
 							self.proxy = child;
 						}else if (child.material.name.indexOf('Glass')!=-1){
-                            child.material.opacity = 0.1;
+                            child.material.opacity = 0.6;
                             child.material.transparent = true;
                         }else if (child.material.name.indexOf("SkyBox")!=-1){
                             const mat1 = child.material;
