@@ -93,7 +93,7 @@ class VRButton{
             currentSession.removeEventListener( 'end', onSessionEnded );
 
             self.stylizeElement( button, true, 12, true );
-            button.textContent = 'ENTER VR';
+            button.textContent = 'VR TIME';
 
             currentSession = null;
             
@@ -172,8 +172,8 @@ class VRButton{
         button.style.bottom = '0px';
         button.style.border = '';
         button.style.opacity = '1';
-        button.style.fontSize = '13px';
-        button.textContent = 'VR NOT SUPPORTED';
+        button.style.fontSize = '10px';
+        button.textContent = 'VR NOT SUPPORTED? BUY VR HEADSET';
         
         
 
