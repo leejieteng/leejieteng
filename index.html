@@ -31,18 +31,8 @@
         });
         import * as THREE from 'https://unpkg.com/three/build/three.module.js';
 
-// Import the default VRButton
-import { VRButton } from 'https://unpkg.com/three/examples/jsm/webxr/VRButton.js';
 
-// Make a new scene
-let scene = new THREE.Scene();
-// Set background color of the scene to gray
-scene.background = new THREE.Color(0x505050);
 
-// Make a camera. note that far is set to 100, which is better for real-world sized environments
-let camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 100);
-camera.position.set(0, 1.6, 3);
-scene.add(camera);
 
 // Add some lights
 var light = new THREE.DirectionalLight(0xffffff,0.5);
